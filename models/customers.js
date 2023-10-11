@@ -6,11 +6,6 @@ const customeres = new Schema({
         required: true,
         minLength: 1,
     },
-    name:{
-        type:String,
-        required: true,
-        minLength: 3,
-    },
     lastName:{
         type: String,
         required: true,
@@ -37,5 +32,4 @@ const customeres = new Schema({
 
 })
 const Customer = models.Customer || model("Customer" , customeres);
-const Customer = models.Custumer || model("Customer" , customeres)
 export default Customer;
