@@ -44,10 +44,6 @@ const AddCustomer = () => {
     products: [...form.products , {name: '',price:'',quantity:''}]}
     )
  }
- const removeHandeler = (text)=>{
-    const data = form.products.filter(item => item.name === text);
-    setForm({...form})
- }
     return (
         <>
             <div className="flex flex-col items-center justify-between rounded-md border-2 w-2/4 pt-4 m-auto">
