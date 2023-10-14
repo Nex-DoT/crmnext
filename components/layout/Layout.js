@@ -6,7 +6,7 @@ const Layout = ({children}) => {
                <h2 className="text-xl">Botostart CRM</h2>
                <Link className="bg-green-500 p-2 rounded-md" href="/add-customer">Add Customer</Link>
            </header>
-           <main className="w-full h-fullScreen min-h-screen">{children}</main>
+           <main className="">{children}</main>
            <footer className="flex  justify-center p-2 bg-gray-500">
                Next.js course | CRM Project &copy;  
            </footer>            
