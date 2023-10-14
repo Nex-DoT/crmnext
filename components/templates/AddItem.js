@@ -16,6 +16,7 @@ const AddItem = ({data}) => {
                    <input className="w-20 ml-2 rounded-md bg-zinc-900 border-blue-300 border-2" type="number" />
                 </div>
             </div>
+            <button onClick={} className="rounded-md text-red-500 w-full h-7 border-red-400 border-2">Remove</button>
         </div>
     );
 };
