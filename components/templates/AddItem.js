@@ -8,6 +8,12 @@ const AddItem = ({data, form, setForm, index1}) => {
   
     const removeHandler = (e) => {
       // Implement remove functionality here
+      const splicedData = form.products.splice(index1,1)
+      setForm({
+        ...form,
+        product: splicedData
+
+      })
     };
   
     const onChangeHandler = (e, index) => {
@@ -34,7 +40,7 @@ const AddItem = ({data, form, setForm, index1}) => {
             type="text"
             name="name"
             value={product.name}
-            onChange={(e) => onChangeHandler(e, index1)}
+            onChange={(e) => onChangeHandler(e)}
           />
         </div>
         <div className="flex items-center justify-between p-6">
@@ -45,7 +51,7 @@ const AddItem = ({data, form, setForm, index1}) => {
               type="number"
               name="price"
               value={product.price}
-              onChange={(e) => onChangeHandler(e, index1)}
+              onChange={(e) => onChangeHandler(e)}
             />
           </div>
           <div className="flex ml-2">
@@ -55,7 +61,7 @@ const AddItem = ({data, form, setForm, index1}) => {
               type="number"
               name="quantity"
               value={product.quantity}
-              onChange={(e) => onChangeHandler(e, index1)}
+              onChange={(e) => onChangeHandler(e)}
             />
           </div>
         </div>
