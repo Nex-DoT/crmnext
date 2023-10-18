@@ -4,11 +4,12 @@ import connectDB from "@/utils/connectDB";
 import { useRouter } from "next/router";
 const EditCustomer = ({data}) => {
     const router = useRouter();
-    const newDAta = data.find(item=> item._id === router.query.editCustomer)
+    const path = router.query.editCustomer;
+    const newDAta = data.find(item=> item._id === path)
     console.log(newDAta);
     return (
         <div>
-            <EditCustomerPage data={newDAta}/>
+            <EditCustomerPage data={newDAta} route={path}/>
         </div>
     );
 };
