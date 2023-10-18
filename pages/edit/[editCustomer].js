@@ -1,4 +1,4 @@
-import Form from "@/components/models/Form";
+import EditCustomerPage from "@/components/templates/EditCustomerPage";
 import Customer from "@/models/customers";
 import connectDB from "@/utils/connectDB";
 import { useRouter } from "next/router";
@@ -8,7 +8,7 @@ const EditCustomer = ({data}) => {
     console.log(newDAta);
     return (
         <div>
-            <Form form={newDAta} />
+            <EditCustomerPage data={newDAta}/>
         </div>
     );
 };

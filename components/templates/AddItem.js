@@ -36,7 +36,7 @@ const AddItem = ({data, form, setForm, index1}) => {
         <div className="w-full m-2 flex items-center justify-center">
           <h2 className="text-white">Name:</h2>
           <input
-            className="w-3/4 ml-2 rounded-md bg-zinc-900 border-blue-300 border-2"
+            className="w-3/4 ml-2 rounded-md bg-zinc-900 border-blue-300 border-2 text-white pl-4"
             type="text"
             name="name"
             value={product.name}
@@ -47,7 +47,7 @@ const AddItem = ({data, form, setForm, index1}) => {
           <div className="flex">
             <h2 className="text-white">Price:</h2>
             <input
-              className="w-20 ml-2 rounded-md bg-zinc-900 border-blue-300 border-2"
+              className="w-20 ml-2 rounded-md bg-zinc-900 border-blue-300 border-2 text-white pl-2"
               type="number"
               name="price"
               value={product.price}
@@ -57,7 +57,7 @@ const AddItem = ({data, form, setForm, index1}) => {
           <div className="flex ml-2">
             <h2 className="text-white">Quantity:</h2>
             <input
-              className="w-20 ml-2 rounded-md bg-zinc-900 border-blue-300 border-2"
+              className="w-20 ml-2 rounded-md bg-zinc-900 border-blue-300 border-2 text-white pl-2"
               type="number"
               name="quantity"
               value={product.quantity}

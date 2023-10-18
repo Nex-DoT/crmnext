@@ -1,10 +1,10 @@
-const Form = ({form , setForm}) => {
+const Form = ({form , setForm , name}) => {
     console.log(form);
     const onChangeHandeler = (e) => {
-        setForm({
-            ...form,
-            [e.target.name] : e.target.value,
-        })
+            setForm({
+                ...form,
+                [e.target.name] : e.target.value,
+            })
     };
     return (
         <form className="w-full">
